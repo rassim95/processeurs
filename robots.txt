@@ -2,4 +2,4 @@ User-agent: Googlebot
 Disallow: /nogooglebot/
 User-agent: *
 Allow: /
-Sitemap: http://www.processeurs.yorkhost.fr/sitemap.xml
+Sitemap: https://rassim95.github.io/processeurs/sitemap.xml
