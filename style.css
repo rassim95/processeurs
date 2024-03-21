@@ -1,0 +1,171 @@
+:root {
+    --main-color: white;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url(./assets/fonts/Inter-Black.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter';
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
+
+body {
+    height: 100vh;
+    background: url(./assets/img/bg.jpg) center/cover;
+}
+
+*::selection {
+    color: black;
+}
+
+nav {
+    margin: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-contain {
+    display: flex;
+    width: 13%;
+    justify-content: space-evenly;
+}
+
+.nav-contain img {
+    height: 40px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.main-title {
+    padding-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.header-main,  .body-main{
+    height: 25%;
+    width: 100%;
+}
+.header-main {
+    margin-top: 40px;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.body-main {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-part1, .header-part2 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    border-radius: 5px;
+    border-right: none;
+    width: 100%;
+}
+
+.card h2{
+    text-transform: uppercase;
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.card p{
+    font-size: 0.8rem;
+    padding: 20px;
+}
+
+a img {
+    width: 100%;
+    height: 100%;
+}
+
+.imagee a img {
+    height: 100%;
+}
+
+/* Processeurs Intel */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    height: 90%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-card {
+    height: 75%;
+    width: 80%;
+    border: 3px dashed rgba(199, 199, 199, 0.726);
+    overflow: hidden;
+}
+
+.i-header {
+    margin: 7px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.i-header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.i-header img {
+    height: 50px;
+}
+
+.i-container {
+    
+}
+
+.i-container p {
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (min-width < 900px) {
+    .i-container p {
+        font-size: 1.7rem;
+        color: red;
+    }
+}
